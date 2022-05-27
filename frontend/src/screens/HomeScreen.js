@@ -5,7 +5,6 @@ import Post from '../components/Post'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import { getPost } from '../actions/adActions'
-// import { listProducts } from '../actions/productActions'
 
 const HomeScreen = () => {
   const dispatch = useDispatch()

@@ -7,7 +7,6 @@ import Loader from '../components/Loader'
 import { getUserDetails, updateUserProfile } from '../actions/userActions'
 import { Link } from 'react-router-dom'
 import FormContainer from '../components/FormContainer'
-// import { listMyOrders } from '../actions/orderActions'
 
 const ProfileScreen = ({ location, history }) => {
   const [name, setName] = useState('')

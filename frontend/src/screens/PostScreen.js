@@ -7,8 +7,7 @@ import Loader from '../components/Loader'
 import FormContainer from '../components/FormContainer';
 import axios from 'axios';
 import { createPost } from '../actions/adActions'
-// import { listProductDetails, updateProduct } from '../actions/productActions'
-// import { PRODUCT_UPDATE_RESET } from '../constants/productConstants'
+
 
 const PostScreen = ({ match, history }) => {
 
@@ -19,50 +18,7 @@ const PostScreen = ({ match, history }) => {
     const [uploading, setUploading] = useState(false);
     const dispatch = useDispatch();
 
-
-
-
-    // const productId = match.params.id
-    // const [name, setName] = useState('')
-    // const [price, setPrice] = useState(0)
-    // const [image, setImage] = useState('')
-    // const [brand, setBrand] = useState('')
-    // const [category, setCategory] = useState('')
-    // const [countInStock, setCountInStock] = useState(0)
-    // const [description, setDescription] = useState('')
-    // const [uploading, setUploading] = useState(false)
-    // const dispatch = useDispatch()
-
-    // const productDetails = useSelector((state) => state.productDetails)
-    // const { loading, error, product } = productDetails
-
     const {userInfo} = useSelector((state) => state.userLogin)
-    // const {
-    //     loading: loadingUpdate,
-    //     error: errorUpdate,
-    //     success: successUpdate,
-    // } = productUpdate
-
-    // useEffect(() => {
-    //     if (successUpdate) {
-    //         dispatch({ type: PRODUCT_UPDATE_RESET });
-    //         history.push('/admin/productlist')
-    //     } else {
-    //         if (!product.name || product._id !== productId) {
-    //             dispatch(listProductDetails(productId))
-    //         } else {
-    //             setName(product.name);
-    //             setPrice(product.price);
-    //             setImage(product.image);
-    //             setBrand(product.brand);
-    //             setCategory(product.category);
-    //             setCountInStock(product.countInStock);
-    //             setDescription(product.description);
-    //         }
-    //     }
-
-
-    // }, [dispatch, history, productId, product, successUpdate])
 
 
     const uploadFileHandler = async (e) => {
