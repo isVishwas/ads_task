@@ -1,0 +1,7 @@
+export const CREATE_AD_REQUEST = 'CREATE_AD_REQUEST'
+export const CREATE_AD_SUCCESS = 'CREATE_AD_SUCCESS'
+export const CREATE_AD_FAIL = 'CREATE_AD_FAIL'
+
+export const GET_AD_REQUEST = 'GET_AD_REQUEST'
+export const GET_AD_SUCCESS = 'GET_AD_SUCCESS'
+export const GET_AD_FAIL = 'GET_AD_FAIL'
