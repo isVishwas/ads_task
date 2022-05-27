@@ -31,10 +31,10 @@ const HomeScreen = () => {
         
           userInfo ? 
           <>
-          <h1>Latest ADS</h1>
+          <h1>Latest Active ADS</h1>
           <Row>
           {posts && posts.map((product) => (
-            <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
+            <Col key={product._id} sm={12} md={12} lg={12} xl={12}>
 
               <Post post={product} />
             </Col>
